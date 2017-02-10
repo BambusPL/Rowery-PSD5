@@ -48,6 +48,7 @@ header {
     padding-top: 120px;
     padding-bottom: 140px; }
 
+/*===SEKCJA 2 - ZDJECIA ===== */
 .sekcja2 .sekcja2-zdj1 {
   width: 100%; }
 .sekcja2 .sekcja2-zdj {
@@ -83,7 +84,7 @@ header {
   .sekcja2 .sekcja2-opis hr {
     width: 50px;
     margin: 0 auto;
-    margin-top: 45px; }
+    margin-top: 5%; }
   .sekcja2 .sekcja2-opis .opis1::after {
     content: '';
     width: 0;
@@ -98,5 +99,21 @@ header {
     height: 100%; }
   .sekcja2 .sekcja2-opis .opis2 {
     height: 100%; }
+
+/*==== SEKCJA3 ====*/
+.sekcja2 .col-lg-4 {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden; }
+  .sekcja2 .col-lg-4 .zdj {
+    width: 100%; }
+.sekcja2 .sekcja2-zdj {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center; }
+.sekcja2 .logo-sekcja {
+  position: absolute;
+  align-self: center; }
 
 /*# sourceMappingURL=style.css.map */

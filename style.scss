@@ -40,6 +40,22 @@ $szary1: #848789;
     }
 }
 
+@mixin centrowanie-loga(){
+        .sekcja2-zdj{
+    padding-right: 0;
+    padding-left: 0;
+        display: flex;
+        justify-content: center;
+    
+        
+}
+    .logo-sekcja{
+        position: absolute;
+        align-self: center;
+       
+    }
+}
+
 
 
 *{
@@ -90,25 +106,16 @@ header{
  
 }
 
+/*===SEKCJA 2 - ZDJECIA ===== */
+
 .sekcja2{
     .sekcja2-zdj1{
         width: 100%;
     }
+    @include centrowanie-loga;
    
   
-    .sekcja2-zdj{
-    padding-right: 0;
-    padding-left: 0;
-        display: flex;
-        justify-content: center;
-    
-        
-}
-    .logo-sekcja{
-        position: absolute;
-        align-self: center;
-       
-    }
+
     
     .sekcja2-opis{
         display: flex;
@@ -129,7 +136,7 @@ header{
         hr{
             width: 50px;
             margin: 0 auto;
-            margin-top: 45px;
+            margin-top: 5%;
         }
         
         .opis1::after{
@@ -152,4 +159,19 @@ header{
             height: 100%;
         }
     }
+}
+
+/*==== SEKCJA3 ====*/
+
+.sekcja2{
+    .col-lg-4{
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+        .zdj{
+            width: 100%;
+            
+        }
+    }
+    @include centrowanie-loga;
 }
