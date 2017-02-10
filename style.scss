@@ -1,0 +1,155 @@
+$bold: 700;
+$super-bold: 900;
+$regular: 400;
+$light: 300;
+/* kolory */
+$zielony: #64c29e;
+$szary: #f7f7f7;
+$szary1: #848789;
+
+//zestawy funkcji
+@mixin transition(){
+     transition: all 1s;
+      -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+@mixin bg-pozycja(){
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+@mixin tytul(){
+   
+    h2{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: $bold;
+        font-size: 1.50rem;
+        letter-spacing: 1px;
+    }
+    p{
+        color: $szary1;
+        font-size: 1.05rem;
+        line-height: 30px;
+    }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 18px;
+    position: relative;
+  
+    
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)/*trick do srodkowania, klase dodajemy*/
+}
+
+header{
+    background: url(img/rower.tlo.png);
+    height: 800px;
+    @include bg-pozycja; 
+   
+}
+
+#sekcja1{
+    background-color: $szary;
+    @include tytul;
+         .opis{
+        padding-top: 120px;
+        padding-bottom: 140px;  
+    }
+ 
+}
+
+.sekcja2{
+    .sekcja2-zdj1{
+        width: 100%;
+    }
+   
+  
+    .sekcja2-zdj{
+    padding-right: 0;
+    padding-left: 0;
+        display: flex;
+        justify-content: center;
+    
+        
+}
+    .logo-sekcja{
+        position: absolute;
+        align-self: center;
+       
+    }
+    
+    .sekcja2-opis{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        @include tytul;
+        .opis1{
+            height: 75%;
+        }
+        
+        .tekst{
+           padding-left: 60px;
+            padding-right: 10%;
+            padding-top: 10%;
+        }
+        
+        hr{
+            width: 50px;
+            margin: 0 auto;
+            margin-top: 45px;
+        }
+        
+        .opis1::after{
+            content: '';
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid #fff;;
+    position: relative;
+    bottom: -50px;
+
+        }
+        
+        .opis2 img{
+            width: 100%;
+            height: 100%;
+        }
+        .opis2 {
+            height: 100%;
+        }
+    }
+}

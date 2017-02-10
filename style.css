@@ -1,0 +1,102 @@
+/* kolory */
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 18px;
+  position: relative; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+header {
+  background: url(img/rower.tlo.png);
+  height: 800px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#sekcja1 {
+  background-color: #f7f7f7; }
+  #sekcja1 h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.50rem;
+    letter-spacing: 1px; }
+  #sekcja1 p {
+    color: #848789;
+    font-size: 1.05rem;
+    line-height: 30px; }
+  #sekcja1 .opis {
+    padding-top: 120px;
+    padding-bottom: 140px; }
+
+.sekcja2 .sekcja2-zdj1 {
+  width: 100%; }
+.sekcja2 .sekcja2-zdj {
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: center; }
+.sekcja2 .logo-sekcja {
+  position: absolute;
+  align-self: center; }
+.sekcja2 .sekcja2-opis {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0; }
+  .sekcja2 .sekcja2-opis h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.50rem;
+    letter-spacing: 1px; }
+  .sekcja2 .sekcja2-opis p {
+    color: #848789;
+    font-size: 1.05rem;
+    line-height: 30px; }
+  .sekcja2 .sekcja2-opis .opis1 {
+    height: 75%; }
+  .sekcja2 .sekcja2-opis .tekst {
+    padding-left: 60px;
+    padding-right: 10%;
+    padding-top: 10%; }
+  .sekcja2 .sekcja2-opis hr {
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 45px; }
+  .sekcja2 .sekcja2-opis .opis1::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #fff;
+    position: relative;
+    bottom: -50px; }
+  .sekcja2 .sekcja2-opis .opis2 img {
+    width: 100%;
+    height: 100%; }
+  .sekcja2 .sekcja2-opis .opis2 {
+    height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
