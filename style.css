@@ -76,7 +76,7 @@ header {
     font-size: 1.05rem;
     line-height: 30px; }
   .sekcja2 .sekcja2-opis .opis1 {
-    height: 75%; }
+    min-height: 65%; }
   .sekcja2 .sekcja2-opis .tekst {
     padding-left: 60px;
     padding-right: 10%;
@@ -115,5 +115,87 @@ header {
 .sekcja2 .logo-sekcja {
   position: absolute;
   align-self: center; }
+
+/*===== sekcja 4 ====*/
+#sekcja4 .overlay {
+  background-color: rgba(100, 194, 158, 0.63);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  opacity: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+  #sekcja4 .overlay:hover {
+    opacity: 1;
+    cursor: pointer; }
+  #sekcja4 .overlay img {
+    width: auto;
+    padding-bottom: 2%; }
+#sekcja4 img {
+  width: 100%; }
+#sekcja4 .col-md-4 {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0; }
+#sekcja4 .kol1 {
+  flex-direction: column; }
+#sekcja4 .kolumna1 {
+  flex-direction: row;
+  display: flex; }
+  #sekcja4 .kolumna1 .polowka {
+    width: 50%;
+    position: relative; }
+#sekcja4 .kolumna2 {
+  position: relative; }
+#sekcja4 .kol2 {
+  display: flex;
+  flex-direction: row; }
+  #sekcja4 .kol2 .kolumna3 {
+    width: 50%;
+    position: relative; }
+    #sekcja4 .kol2 .kolumna3 img {
+      height: 100%; }
+#sekcja4 .kol3 {
+  display: flex;
+  flex-direction: column; }
+  #sekcja4 .kol3 .kolumna4 {
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row; }
+    #sekcja4 .kol3 .kolumna4 .polowka {
+      width: 50%;
+      position: relative; }
+
+/*====== sklep przycisk ======*/
+#sklep-przycisk {
+  background-color: #282f35; }
+  #sklep-przycisk button {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background: transparent;
+    border: 1px solid #94979a;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    #sklep-przycisk button:hover {
+      border-color: #64c29e;
+      color: #64c29e;
+      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

@@ -122,11 +122,13 @@ header{
         flex-direction: column;
         padding-left: 0;
         padding-right: 0;
+      
         @include tytul;
-        .opis1{
-            height: 75%;
-        }
         
+        .opis1{
+            min-height: 65%;
+        }
+       
         .tekst{
            padding-left: 60px;
             padding-right: 10%;
@@ -174,4 +176,110 @@ header{
         }
     }
     @include centrowanie-loga;
+}
+
+/*===== sekcja 4 ====*/
+#sekcja4{
+     .overlay{
+        background-color: rgba(100, 194, 158, 0.63);
+        position:absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include transition;
+        opacity: 0;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: $bold;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        &:hover{
+            opacity: 1;
+            cursor: pointer;
+            
+        }
+        img{
+            width: auto;
+            padding-bottom: 2%;
+        }
+    }
+    img{
+       width: 100%;
+    }
+    .col-md-4{
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .kol1{
+        flex-direction: column;
+        
+    }
+    .kolumna1{
+        flex-direction: row;
+        display: flex;
+        
+        .polowka{
+            width: 50%;
+            position: relative;
+           
+        }
+    }
+    .kolumna2{
+        position: relative;
+       
+    }
+   
+    .kol2{
+        display: flex;
+        flex-direction: row;
+        .kolumna3{
+            width: 50%;
+            position: relative;
+            img{
+                height: 100%;
+            }
+        }
+    }
+    .kol3{
+        display: flex;
+        flex-direction: column;
+        .kolumna4{
+            height: 50%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            .polowka {
+                width: 50%;
+                position: relative;
+            }
+        }
+    }
+}
+
+/*====== sklep przycisk ======*/
+#sklep-przycisk{
+    background-color: #282f35;
+    button{
+       margin-top: 70px;
+        margin-bottom: 70px;
+        background: transparent;
+        border: 1px solid #94979a;
+        border-radius: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        &:hover{
+            border-color: $zielony;
+            color: $zielony;
+            cursor: pointer;
+        }
+    }
 }
